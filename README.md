@@ -6,7 +6,7 @@ Flask + MongoDB (3-member replica set) app deployed on Minikube with NGINX Ingre
 - `app/` : Flask app, Dockerfile, .dockerignore
 - `k8s/` : all manifests (namespace, MongoDB StatefulSet, mongo-init Job, ConfigMap, web Deployment+Service, Ingress, HPA)
 - `scripts/` : load-test, sampler and plotting scripts
-- `results/` : raw outputs (httperf, CSVs, logs) and graphs
+- `results/` : raw outputs (load.py outputs, CSVs, logs) and graphs
 
 ## Bring up on a fresh Minikube
 ```bash
@@ -42,4 +42,4 @@ cd scripts
 python3 plot12.py   # graphs 1 and 2
 python3 plot3.py    # graph 3
 ```
-Requires httperf, python3-matplotlib, python3-pandas.
+Requires python3-matplotlib and python3-pandas. The load-test and sampler scripts use only the Python standard library and command-line tools such as kubectl.
