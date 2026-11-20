@@ -1,0 +1,40 @@
+deployment.apps/emi-web scaled
+deployment "emi-web" successfully rolled out
+=== replicas=1 rate=10 (20:07:01) ===
+1,10,25.2,600,600,0,0,0,0,59.925
+=== replicas=1 rate=25 (20:08:37) ===
+1,25,24.3,1500,1500,0,0,0,0,59.991
+=== replicas=1 rate=50 (20:10:12) ===
+1,50,587.5,3000,1867,752,1133,381,381,61.706
+=== replicas=1 rate=100 (20:11:48) ===
+1,100,695.0,6000,1056,2555,4944,2389,2389,59.993
+=== replicas=1 rate=200 (20:13:26) ===
+1,200,180.6,12000,521,6399,11479,5080,5080,61.058
+deployment.apps/emi-web scaled
+Waiting for deployment "emi-web" rollout to finish: 1 of 2 updated replicas are available...
+deployment "emi-web" successfully rolled out
+=== replicas=2 rate=10 (20:15:49) ===
+2,10,30.5,600,600,0,0,0,0,59.921
+=== replicas=2 rate=25 (20:17:27) ===
+2,25,24.0,1500,1500,0,0,0,0,59.996
+=== replicas=2 rate=50 (20:19:06) ===
+2,50,52.7,3000,3000,0,0,0,0,60.027
+=== replicas=2 rate=100 (20:20:41) ===
+2,100,1607.8,6000,1942,1715,4058,2343,2343,64.992
+=== replicas=2 rate=200 (20:22:21) ===
+2,200,359.6,12000,1051,5407,10949,5542,5542,64.998
+deployment.apps/emi-web scaled
+Waiting for deployment "emi-web" rollout to finish: 1 of 3 updated replicas are available...
+Waiting for deployment "emi-web" rollout to finish: 2 of 3 updated replicas are available...
+deployment "emi-web" successfully rolled out
+=== replicas=3 rate=10 (20:27:00) ===
+3,10,18.0,600,600,0,0,0,0,59.918
+=== replicas=3 rate=25 (20:28:34) ===
+3,25,21.8,1500,1500,0,0,0,0,59.974
+=== replicas=3 rate=50 (20:30:08) ===
+3,50,55.5,3000,3000,0,0,0,0,60.019
+=== replicas=3 rate=100 (20:31:42) ===
+3,100,1215.2,6000,3888,1511,2112,601,601,64.981
+=== replicas=3 rate=200 (20:33:22) ===
+3,200,517.1,12000,1636,4316,10364,6048,6048,62.448
+ALL DONE 20:34:59

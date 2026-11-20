@@ -1,0 +1,30 @@
+httperf: warning: open file limit > FD_SETSIZE; limiting max. # of open files to FD_SETSIZE
+httperf --timeout=5 --client=0/1 --server=emi.local --port=80 --uri=/ --rate=200 --send-buffer=4096 --recv-buffer=16384 --add-header='Content-Type: application/json\n' --wsesslog=12000,0.000,/tmp/r3_rate200.wsess
+Maximum connect burst length: 22
+
+Total: connections 12000 requests 12000 replies 5952 test-duration 62.448 s
+
+Connection rate: 192.2 conn/s (5.2 ms/conn, <=1015 concurrent connections)
+Connection time [ms]: min 0.3 avg 517.1 max 4992.8 median 1.5 stddev 1068.6
+Connection time [ms]: connect 0.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 192.2 req/s (5.2 ms/req)
+Request size [B]: 152.0
+
+Reply rate [replies/s]: min 0.0 avg 99.2 max 200.0 stddev 77.7 (12 samples)
+Reply time [ms]: response 517.1 transfer 0.1
+Reply size [B]: header 148.0 content 172.0 footer 0.0 (total 320.0)
+Reply status: 1xx=0 2xx=1636 3xx=0 4xx=0 5xx=4316
+
+CPU time [s]: user 2.52 system 54.86 (user 4.0% system 87.9% total 91.9%)
+Net I/O: 58.5 KB/s (0.5*10^6 bps)
+
+Errors: total 6048 client-timo 6048 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+Session rate [sess/s]: min 0.00 avg 95.31 max 200.01 stddev 77.67 (5952/12000)
+Session: avg 1.00 connections/session
+Session lifetime [s]: 0.5
+Session failtime [s]: 5.0
+Session length histogram: 6048 5952
