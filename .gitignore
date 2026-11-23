@@ -3,3 +3,6 @@ __pycache__/
 *.wsess
 nohup.out
 .env
+results/old_hpa*/
+results/hpa_httperf_*_09*.txt
+results/hpa_httperf_*_10*.txt
