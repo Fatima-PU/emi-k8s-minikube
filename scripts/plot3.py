@@ -11,9 +11,10 @@ fig, axs = plt.subplots(3, 1, sharex=True, figsize=(9, 9))
 
 axs[0].step(ph["timestamp"], ph["rate"], where="post", color="tab:blue")
 axs[0].set_ylabel("Request rate (req/s)")
-axs[0].set_title("Graph 3: Autoscaling test (10 min)")
+axs[0].set_title("Graph 3: Autoscaling test (17 min)")
 
-axs[1].plot(h["timestamp"], h["avg_cpu_percent"], marker="o", color="tab:orange")
+c = h.dropna(subset=["avg_cpu_percent"])
+axs[1].plot(c["timestamp"], c["avg_cpu_percent"], marker="o", color="tab:orange")
 axs[1].axhline(50, color="red", linestyle="--", label="Target 50%")
 axs[1].set_ylabel("Avg CPU (% of request)")
 axs[1].legend()

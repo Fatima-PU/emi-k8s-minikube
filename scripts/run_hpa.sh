@@ -25,8 +25,9 @@ SPID=$!
 HPID=$!
 
 phase 10 120
-phase 100 300
-phase 10 180
+phase 100 480
+phase 10 420
+sleep 150
 echo "$(ts),0" >> $RES/hpa_phases.csv
 
 kill $SPID $HPID
